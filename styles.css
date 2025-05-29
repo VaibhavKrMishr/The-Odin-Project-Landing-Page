@@ -1,27 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  padding: 30px 0 60px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-content .text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.hero-content button {
+  padding: 10px 24px;
+  font-size: 16px;
+  background-color: #fbbf24;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-content img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #111;
+}
+
+/* Info Section */
+.info {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.info h3 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #1f2937;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #1f2937;
+}
+
+.card p {
+  font-size: 16px;
   color: #333;
 }
 
-.hero {
-  background-color: #e1ecf4;
-  padding: 60px;
+/* Quote Section */
+.quote {
+  background-color: #e5e7eb;
+  padding: 80px 20px;
   text-align: center;
-  border-bottom: 4px solid #aaa;
+  font-style: italic;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 960px;
-  margin: 0 auto;
+.quote blockquote {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 20px;
 }
 
+.quote .author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+/* CTA Section */
+.cta {
+  padding: 60px 20px;
+}
+
+.cta-box {
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cta-text h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-text p {
+  font-size: 18px;
+}
+
+.cta-box button {
+  background-color: #facc15;
+  color: #1e3a8a;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Footer */
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #1f2937;
+  color: white;
   text-align: center;
   padding: 20px;
 }
